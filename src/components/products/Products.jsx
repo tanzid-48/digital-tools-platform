@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { use } from 'react';
 
-const Products = () => {
+const Products = ({productPromise}) => {
+
+    const products = use(productPromise);
+    console.log(products);
+    
     return (
         <div className="mt-16 ">
 

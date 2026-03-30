@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "AI Content Studio",
+    "description": "Generate high-quality blogs, ads, and social media content using AI.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["AI writing assistant", "100+ templates", "SEO optimization", "Multi-language support"],
+    "icon": "🤖"
+  },
+  {
+    "id": 2,
+    "name": "Design Pro Toolkit",
+    "description": "Create stunning graphics, logos, and UI designs effortlessly.",
+    "price": 59.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["500+ design assets", "Drag & drop editor", "Brand kit", "Export in HD"],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "CodeBoost IDE",
+    "description": "Online coding environment with smart AI code suggestions.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["AI autocomplete", "Multi-language support", "Cloud sync", "Debugging tools"],
+    "icon": "💻"
+  },
+  {
+    "id": 4,
+    "name": "Marketing Automation Pro",
+    "description": "Automate email campaigns, funnels, and customer engagement.",
+    "price": 39.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Email automation", "Funnel builder", "Analytics dashboard", "CRM integration"],
+    "icon": "📈"
+  },
+  {
+    "id": 5,
+    "name": "Video Creator Suite",
+    "description": "Create professional videos with templates and AI editing tools.",
+    "price": 79.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Video templates", "AI editing", "Stock footage library", "4K export"],
+    "icon": "🎬"
+  },
+  {
+    "id": 6,
+    "name": "Cloud Storage Plus",
+    "description": "Secure and scalable cloud storage for all your files.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["1TB storage", "File sharing", "End-to-end encryption", "Auto backup"],
+    "icon": "☁️"
+  },
+  {
+    "id": 7,
+    "name": "SEO Analyzer Pro",
+    "description": "Optimize your website ranking with advanced SEO insights.",
+    "price": 24.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Keyword research", "Site audit", "Backlink analysis", "Competitor tracking"],
+    "icon": "🔍"
+  },
+  {
+    "id": 8,
+    "name": "Team Collaboration Hub",
+    "description": "Manage projects, tasks, and team communication in one place.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Task management", "Real-time chat", "File sharing", "Kanban boards"],
+    "icon": "👥"
+  }
+]
