@@ -1,7 +1,7 @@
 import React from 'react';
 const StatsSection = () => {
     return (
-        <div className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-8 w-full mt-10">
+        <div className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-10 w-full mb-16">
             
             <div className="  flex flex-col md:flex-row justify-evenly items-center gap-8 text-center">
 

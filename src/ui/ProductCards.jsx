@@ -1,7 +1,13 @@
 import { Check } from 'lucide-react';
 import React from 'react';
 
-const ProductCards = ({ product }) => {
+ 
+
+const ProductCards = ({ product}) => {
+
+   const handleBuyBtn = () => {
+       
+   }
   return (
     <div className="card bg-base-100 shadow-md rounded-2xl p-5 ">
       <div className="flex justify-between items-center mb-3">
@@ -24,7 +30,7 @@ const ProductCards = ({ product }) => {
           </li>
         ))}
       </ul>
-      <div className="mt-5">
+      <div onClick={() =>handleBuyBtn()} className="mt-5">
         <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full font-light text-white w-full">
           Buy Now
         </button>
