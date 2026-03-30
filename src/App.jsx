@@ -25,12 +25,11 @@ return (
   <main>
    <Hero></Hero> 
    <StatsSection></StatsSection>
-
+   
    <Suspense fallback = {<span className="loading loading-bars loading-xl"></span>}>
     <Products productPromise = {productPromise}></Products>
    </Suspense>
-   
-   <Tab></Tab>
+
   </main>
 
   <footer></footer>
