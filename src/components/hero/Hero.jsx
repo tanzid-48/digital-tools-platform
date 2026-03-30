@@ -21,7 +21,7 @@ const Hero = () => {
                         Explore Products
                     </p>
                     <div className="flex flex-wrap gap-4">
-                        <button className="btn btn-primary rounded-full ">Explore Products</button>
+                        <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-light rounded-full ">Explore Products</button>
                         <button className="btn border-[#4F39F6] text-[#4F39F6] rounded-full flex items-center gap-2">
                             <Play size={16} />
                             Watch Demo

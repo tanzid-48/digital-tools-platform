@@ -35,7 +35,7 @@ const NavBar = () => {
           </svg>
         </div>
         <a className="hidden md:block">Login</a>
-        <button className="btn btn-primary rounded-full text-white">
+        <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA]  rounded-full text-white font-light">
           Get Started
         </button>
       </div>
