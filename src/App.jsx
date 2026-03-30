@@ -1,4 +1,5 @@
 import './App.css'
+import Hero from './components/hero/Hero'
 import NavBar from './components/navbar/NavBar'
 
 function App() {
@@ -9,7 +10,7 @@ return (
   </nav>
 
   <main>
-    
+   <Hero></Hero> 
   </main>
 
   <footer></footer>
