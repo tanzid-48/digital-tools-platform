@@ -7,6 +7,7 @@ import StatsSection from './ui/StatsSection'
 import Tab from './ui/Tab'
 import Card from './ui/Card'
 import Footer from './components/footer/Footer'
+import Explore from './ui/Explore'
 
 const getProduct = async() =>{
   const res = await fetch("/Products.json");
@@ -28,6 +29,7 @@ return (
    <Hero></Hero> 
    <StatsSection></StatsSection>
    <Tab isBuy={isBuy} setIsBuy={setIsBuy} cards= {cards} />
+
    {
     isBuy === "Products" &&  <Suspense fallback = {<span className="loading loading-bars loading-xl"></span>}>
     <Products productPromise = {productPromise}  cards = {cards} SetCards = {SetCards} ></Products>
@@ -39,6 +41,7 @@ return (
     SetCards={SetCards}  ></Card>
    }
 
+   <Explore></Explore>
   </main>
 
   <footer>
