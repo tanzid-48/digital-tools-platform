@@ -1,12 +1,11 @@
 import { Check } from 'lucide-react';
-import React from 'react';
 
- 
-
-const ProductCards = ({ product}) => {
+const ProductCards = ({ product,cards,SetCards}) => {
 
    const handleBuyBtn = () => {
-       
+    
+    SetCards([...cards,product])
+     
    }
   return (
     <div className="card bg-base-100 shadow-md rounded-2xl p-5 ">

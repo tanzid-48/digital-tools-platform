@@ -15,6 +15,8 @@ const getProduct = async() =>{
 
 function App() {
   const [isBuy,setIsBuy] = useState("Products")
+  const [cards,SetCards] = useState([]);
+
 return (
   <>
   <nav>
@@ -24,15 +26,16 @@ return (
   <main>
    <Hero></Hero> 
    <StatsSection></StatsSection>
-   <Tab isBuy={isBuy} setIsBuy={setIsBuy} />
+   <Tab isBuy={isBuy} setIsBuy={setIsBuy} cards= {cards} />
    {
     isBuy === "Products" &&  <Suspense fallback = {<span className="loading loading-bars loading-xl"></span>}>
-    <Products productPromise = {productPromise} isBuy = {isBuy} setIsBuy = {setIsBuy} ></Products>
+    <Products productPromise = {productPromise}  cards = {cards} SetCards = {SetCards} ></Products>
    </Suspense>
    }
 
    {
-    isBuy === "Card" && <Card isBuy = {isBuy} setIsBuy = {setIsBuy}></Card>
+    isBuy === "Card" && <Card isBuy = {isBuy} setIsBuy = {setIsBuy}   cards={cards} 
+    SetCards={SetCards}  ></Card>
    }
 
   </main>
