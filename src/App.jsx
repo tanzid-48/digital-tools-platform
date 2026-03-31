@@ -6,6 +6,7 @@ import Products from './components/products/Products'
 import StatsSection from './ui/StatsSection'
 import Tab from './ui/Tab'
 import Card from './ui/Card'
+import Footer from './components/footer/Footer'
 
 const getProduct = async() =>{
   const res = await fetch("/Products.json");
@@ -40,7 +41,9 @@ return (
 
   </main>
 
-  <footer></footer>
+  <footer>
+    <Footer></Footer>
+  </footer>
   </>
   )
 }
