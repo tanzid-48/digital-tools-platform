@@ -20,7 +20,7 @@ function App() {
 return (
   <>
   <nav>
-<NavBar></NavBar>
+<NavBar cards = {cards}></NavBar>
   </nav>
 
   <main>

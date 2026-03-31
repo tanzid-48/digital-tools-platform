@@ -1,8 +1,8 @@
 import React from 'react';
 
-const NavBar = () => {
-    return (
-         <div className="navbar bg-base-100 shadow-sm px-6 w-11/12 mx-auto">
+const NavBar = ({ cards }) => {
+  return (
+    <div className="navbar bg-base-100 shadow-sm px-6 w-11/12 mx-auto">
       <div className="flex-1">
         <a className="btn btn-ghost text-3xl font-bold text-[#4F39F6]">
           DigiTools
@@ -22,6 +22,11 @@ const NavBar = () => {
       <div className="flex items-center gap-4 ml-7">
         {/* function add.. */}
         <div className="indicator">
+          {cards.length > 0 ? (<span className="indicator-item badge rounded-full w-0.5 badge-primary">
+            {cards.length}
+          </span>) : ""
+          }
+
           <svg xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
             fill="none"
@@ -40,7 +45,6 @@ const NavBar = () => {
         </button>
       </div>
     </div>
-    );
+  );
 };
-
 export default NavBar;
