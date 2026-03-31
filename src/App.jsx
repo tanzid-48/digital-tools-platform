@@ -8,6 +8,7 @@ import Tab from './ui/Tab'
 import Card from './ui/Card'
 import Footer from './components/footer/Footer'
 import Explore from './ui/Explore'
+import Pricing from './ui/Pricing'
 
 const getProduct = async() =>{
   const res = await fetch("/Products.json");
@@ -41,6 +42,7 @@ return (
     SetCards={SetCards}  ></Card>
    }
 
+   <Pricing></Pricing>
    <Explore></Explore>
   </main>
 
