@@ -8,9 +8,9 @@ const Tab = ({ isBuy, setIsBuy,cards }) => {
             <input
                 type="radio"
                 name="my_tabs"
-                className={`tab rounded-full w-40 ${
+                className={`tab rounded-full w-40 text-lg font-semibold ${
                     isBuy === "Products"
-                        ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"
+                        ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white "
                         : ""
                 }`}
                 aria-label="Products"
@@ -21,7 +21,7 @@ const Tab = ({ isBuy, setIsBuy,cards }) => {
             <input
                 type="radio"
                 name="my_tabs"
-                className={`tab rounded-full w-40 ${
+                className={`tab rounded-full w-40 text-lg font-semibold  ${
                     isBuy === "Card"
                         ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"
                         : ""

@@ -1,17 +1,19 @@
 
 import { X } from 'lucide-react';
+import { toast } from 'react-toastify';
 
 const Card = ({ cards, SetCards }) => {
     const total = cards.reduce((sum, card) => sum + card.price, 0);
     const handleRemoved = (card) => {
         const filterData = cards.filter(c => c.id !== card.id);
         SetCards(filterData)
+        toast.warning(`${card.name} has removed`);
     }
     const handleCheckout = () => {
-
         SetCards([]);
+        toast.success("Payment SuccessFull");
     }
-   return (
+    return (
         <div className="w-10/12 mx-auto mt-10 bg-base-100 shadow-md  ">
 
             <h2 className="text-2xl font-bold mb-5">
@@ -19,9 +21,14 @@ const Card = ({ cards, SetCards }) => {
             </h2>
             {
                 cards.length === 0 ? (
-                    <p className="text-center text-gray-500">
-                        No items added
-                    </p>
+                    <div className="py-5 ">
+                        <h3 className="text-center text-3xl text-gray-500 mt-6">
+                            No cards selected
+                        </h3>
+                        <p className='text-center text-gray-600'>
+                            Go to Products to select a card
+                        </p>
+                    </div>
                 ) : (
                     <> <div className="space-y-4">
                         {
