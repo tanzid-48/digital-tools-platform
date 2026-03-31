@@ -1,6 +1,6 @@
 import { Check, CheckCheck } from 'lucide-react';
 import { useState } from 'react';
-import { toast } from 'react-toastify';
+import { toast } from 'sonner';
 
 const ProductCards = ({ product,cards,SetCards}) => {
 
@@ -9,12 +9,12 @@ const ProductCards = ({ product,cards,SetCards}) => {
    const handleBuyBtn = () => {
     const isFound = cards.find(item => item.id === product.id)
     if(isFound){
-       toast.error(`${product.name} already in cart`);
+     toast.error(`${product.name} already in cart`);
      return;
     }
     SetCards([...cards,product])
     setBuyNow(true);
-    toast.success(`${product.name} added to cart`); 
+     toast.success(`${product.name} added to cart`); 
      
    }
   return (

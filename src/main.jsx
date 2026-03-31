@@ -9,6 +9,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
     <ToastContainer></ToastContainer>
-    {/* <Toaster position="top-right" richColors /> */}
+    <Toaster position="top-right" richColors />
   </StrictMode>,
 )

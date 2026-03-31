@@ -1,6 +1,6 @@
 
 import { X } from 'lucide-react';
-import { toast } from 'react-toastify';
+import { toast } from 'sonner';
 
 const Card = ({ cards, SetCards }) => {
     const total = cards.reduce((sum, card) => sum + card.price, 0);
