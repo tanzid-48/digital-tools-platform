@@ -3,6 +3,9 @@ import { Check } from 'lucide-react';
 const ProductCards = ({ product,cards,SetCards}) => {
 
    const handleBuyBtn = () => {
+    const isFound = cards.find(item => item.id === product.id)
+    if(isFound)
+     return;
     
     SetCards([...cards,product])
      
