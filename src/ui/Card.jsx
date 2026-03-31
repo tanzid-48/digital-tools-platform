@@ -1,14 +1,17 @@
-import React from 'react';
+
 import { X } from 'lucide-react';
 
-const Card = ({ cards,SetCards }) => {
+const Card = ({ cards, SetCards }) => {
     const total = cards.reduce((sum, card) => sum + card.price, 0);
     const handleRemoved = (card) => {
         const filterData = cards.filter(c => c.id !== card.id);
         SetCards(filterData)
     }
+    const handleCheckout = () => {
 
-    return (
+        SetCards([]);
+    }
+   return (
         <div className="w-10/12 mx-auto mt-10 bg-base-100 shadow-md  ">
 
             <h2 className="text-2xl font-bold mb-5">
@@ -33,7 +36,7 @@ const Card = ({ cards,SetCards }) => {
                                             <p className="text-gray-500">${card.price}</p>
                                         </div>
                                     </div>
-                                    <button onClick={() => handleRemoved(card) } >
+                                    <button onClick={() => handleRemoved(card)} >
                                         <X size={20} />
                                     </button>
 
@@ -44,7 +47,12 @@ const Card = ({ cards,SetCards }) => {
                             <h3 className='text-gray-500'>Total:</h3>
                             <p>${total.toFixed(2)}</p>
                         </div>
-                        <button className='btn  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full font-light text-white w-full '>Proceed To Checkout</button>
+                        <button
+                            onClick={handleCheckout}
+                            className=" btn  rounded-full font-light text-white w-full 
+                         bg-linear-to-r from-[#4F39F6] to-[#9514FA] "
+                        > Proceed To Checkout
+                        </button>
                     </>
                 )
             }
