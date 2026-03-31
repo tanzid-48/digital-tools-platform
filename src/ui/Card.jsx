@@ -1,8 +1,12 @@
 import React from 'react';
 import { X } from 'lucide-react';
 
-const Card = ({ cards }) => {
+const Card = ({ cards,SetCards }) => {
     const total = cards.reduce((sum, card) => sum + card.price, 0);
+    const handleRemoved = (card) => {
+        const filterData = cards.filter(c => c.id !== card.id);
+        SetCards(filterData)
+    }
 
     return (
         <div className="w-10/12 mx-auto mt-10 bg-base-100 shadow-md  ">
@@ -29,7 +33,7 @@ const Card = ({ cards }) => {
                                             <p className="text-gray-500">${card.price}</p>
                                         </div>
                                     </div>
-                                    <button >
+                                    <button onClick={() => handleRemoved(card) } >
                                         <X size={20} />
                                     </button>
 
@@ -48,5 +52,4 @@ const Card = ({ cards }) => {
 
     );
 };
-
 export default Card;
