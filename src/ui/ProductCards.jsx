@@ -1,13 +1,18 @@
-import { Check } from 'lucide-react';
+import { Check, CheckCheck } from 'lucide-react';
+import { useState } from 'react';
 
 const ProductCards = ({ product,cards,SetCards}) => {
+
+  const [buyNow,setBuyNow] = useState(false);
 
    const handleBuyBtn = () => {
     const isFound = cards.find(item => item.id === product.id)
     if(isFound)
+
      return;
-    
+
     SetCards([...cards,product])
+    setBuyNow(true);
      
    }
   return (
@@ -32,9 +37,17 @@ const ProductCards = ({ product,cards,SetCards}) => {
           </li>
         ))}
       </ul>
-      <div onClick={() =>handleBuyBtn()} className="mt-5">
-        <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full font-light text-white w-full">
-          Buy Now
+      <div className= " mt-5">
+        <button onClick={() =>handleBuyBtn()} className={`btn rounded-full font-semibold text-white w-full ${
+          buyNow 
+          ?"bg-green-500 hover:bg-green-600 "
+          :"bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
+
+        }`}>
+
+       {
+        buyNow ? " Added " : "Buy Now"
+       }
         </button>
       </div>
     </div>
