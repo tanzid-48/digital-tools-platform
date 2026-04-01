@@ -1,16 +1,74 @@
-# React + Vite
+# DigiTools 🛠️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools is a modern premium digital tools buying platform where users can browse, select, and purchase digital products seamlessly. It features a clean and responsive UI built with React and Tailwind CSS, offering a smooth shopping experience with cart management and real-time notifications.
 
-Currently, two official plugins are available:
+## 🔗 Live Link
+[https://digital-tools-platform-by-tanzid.netlify.app/](https://digital-tools-platform-by-tanzid.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📂 GitHub Repository
+[https://github.com/tanzid-48/digital-tools-platform](https://github.com/tanzid-48/digital-tools-platform)
 
-## React Compiler
+## 🚀 Features
+- 🛒 Add products to cart with duplicate prevention
+- ❌ Remove individual items from cart with toast notification
+- 💰 Dynamic total price calculation in cart
+- 🔔 Real-time toast notifications using React-Toastify
+- 🎨 Fully responsive design across all devices
+- 🏷️ Product tags (Popular, New, Best Seller)
+- ✅ Buy Now button changes to "Added ✔" after purchase
+- 🧹 Proceed to Checkout clears entire cart
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧰 Technologies Used
+- **React.js** — Frontend framework
+- **Tailwind CSS** — Utility-first styling
+- **DaisyUI** — UI component library
+- **JavaScript (ES6+)** — Core logic
+- **React-Toastify** — Toast notifications
+- **JSON** — Product data storage
+- **Lucide React** — Icons
+- **React Icons** — Social media icons
 
-## Expanding the ESLint configuration
+## 📦 Installation
+```bash
+git clone https://github.com/tanzid-48/digital-tools-platform.git
+cd digital-tools-platform
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+```
+src/
+├── assets/
+├── components/
+│   ├── hero/Hero.jsx
+│   ├── navbar/NavBar.jsx
+│   ├── footer/Footer.jsx
+│   └── products/Products.jsx
+├── ui/
+│   ├── Card.jsx
+│   ├── Explore.jsx
+│   ├── GetStarted.jsx
+│   ├── Pricing.jsx
+│   ├── ProductCards.jsx
+│   ├── StatsSection.jsx
+│   └── Tab.jsx
+├── App.jsx
+└── main.jsx
+```
+
+## 📄 Sections
+- **Navbar** — Cart icon with live badge count
+- **Hero** — Banner with heading, description, image and CTA buttons
+- **Stats** — Key platform statistics (50K+ users, 200K+ tools, 4.9 rating)
+- **Products** — 3-column product grid with full cart functionality
+- **Cart** — Selected items with remove button, total price and checkout
+- **GetStarted** — 3-step onboarding guide
+- **Pricing** — Transparent pricing plans (Starter, Pro, Enterprise)
+- **Explore** — Call-to-action section
+- **Footer** — Navigation links and social icons
+
+## 🙌 Author
+**Tanzid Mondol**
+
+[![GitHub](https://img.shields.io/badge/GitHub-tanzid--48-181717?style=flat&logo=github)](https://github.com/tanzid-48)
