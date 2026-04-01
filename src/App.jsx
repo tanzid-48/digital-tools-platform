@@ -9,6 +9,7 @@ import Card from './ui/Card'
 import Footer from './components/footer/Footer'
 import Explore from './ui/Explore'
 import Pricing from './ui/Pricing'
+import GetStarted from './ui/GetStarted'
 
 const getProduct = async() =>{
   const res = await fetch("/Products.json");
@@ -41,7 +42,7 @@ return (
     isBuy === "Card" && <Card isBuy = {isBuy} setIsBuy = {setIsBuy}   cards={cards} 
     SetCards={SetCards}  ></Card>
    }
-
+   <GetStarted></GetStarted>
    <Pricing></Pricing>
    <Explore></Explore>
   </main>

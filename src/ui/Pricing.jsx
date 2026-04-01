@@ -2,7 +2,7 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <div className="">
+        <div className="mt-30">
             <div className="text-center">
                 <h2 className="text-4xl font-bold mb-3">Simple, Transparent Pricing</h2>
                 <p className="text-gray-500 mb-12">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
@@ -49,12 +49,12 @@ const Pricing = () => {
                                <span className="badge bg-[#FEF3C6] text-[#BB4D00] self-start text-xs absolute -top-3 left-1/4">Most Popular</span>
                        <div className="space-y-2">
                          <h2 className="text-3xl font-bold">Pro</h2>
-                            <p className='text-gray-600 mb-4'>Best for professionals</p>
+                            <p className='text-white/70 mb-4'>Best for professionals</p>
                        </div>
                            
-                       <p className="text-2xl font-bold">$29<span className='text-gray-600 text-sm font-medium'>/month</span></p>
+                       <p className="text-2xl font-bol text-white">$29<span className='text-white/70 text-sm font-medium'>/month</span></p>
                         
-                        <ul className="mt-6 flex flex-col gap-2 text-xs">
+                        <ul className="mt-6 flex flex-col gap-2 text-xs text-white/70 ">
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                                 <span>Access to all premium tools</span>
