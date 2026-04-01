@@ -1,17 +1,17 @@
 
 import { X } from 'lucide-react';
-import { toast } from 'sonner';
+import { toast } from 'react-toastify';
 
 const Card = ({ cards, SetCards }) => {
     const total = cards.reduce((sum, card) => sum + card.price, 0);
     const handleRemoved = (card) => {
         const filterData = cards.filter(c => c.id !== card.id);
         SetCards(filterData)
-        toast.warning(`${card.name} has removed`);
+        toast.error(`${card.name} removed from cart`);
     }
     const handleCheckout = () => {
         SetCards([]);
-        toast.success("Payment SuccessFull");
+        toast.success("Checkout successful!");
     }
     return (
         <div className="w-10/12 mx-auto mt-10 bg-base-100 shadow-md  ">
