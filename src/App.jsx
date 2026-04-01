@@ -37,7 +37,6 @@ return (
     <Products productPromise = {productPromise}  cards = {cards} SetCards = {SetCards} ></Products>
    </Suspense>
    }
-
    {
     isBuy === "Card" && <Card isBuy = {isBuy} setIsBuy = {setIsBuy}   cards={cards} 
     SetCards={SetCards}  ></Card>
